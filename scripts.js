@@ -1,14 +1,10 @@
-function plus(a,b) {
-    return(a + b)
+function add(a, b) {
+    return(
+        console.log(a + b),
+        console.log(this),
+        console.log(arguments)
+    )
 }
 
-console.log(plus(5,6));
+add(5, 4);
 
-
-
-//Anonymous function
-var subtract = function(a, b) {
-    return console.log(a - b);
-}(5,2);
-
-//console.log(subtract(50, 8))
